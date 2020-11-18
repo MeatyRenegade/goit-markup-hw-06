@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студия</title>
+    <title>Главная</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
@@ -24,16 +24,12 @@
         <ul class="list info-box-top">
           <li class="list link link-header">
             <a class="link link-header" href="mailto:info@devstudio.com">
-              <svg class="mailto-svg">
-                <use href="./img/sprite.svg#envelope"></use>
-                </svg>info@devstudio.com
+              <svg class="mailto-svg"><use href="./img/sprite.svg#envelope"></use></svg>info@devstudio.com
             </a>
           </li>
           <li class="list link link-header">
             <a class="link link-header" href="tel:+380961111111">
-              <svg class="tel-svg">
-                <use href="./img/sprite.svg#smartphone"></use>
-                </svg>+38 096 111 11 11
+              <svg class="tel-svg"><use href="./img/sprite.svg#smartphone"></use></svg>+38 096 111 11 11
             </a>
           </li>
         </ul>
@@ -53,22 +49,22 @@
                 <use href="./img/modal-close-btn.svg"></use>
               </svg>
             </button>
-            <h3>Оставьте свои данные, мы вам перезвоним</h3>
-            <form class="modal-input-form">
-              <label>
-                Имя
-                <input class="modal-input-field" type="" name="email" />
-              </label>
-              <label>
-                Телефон
-                <input class="modal-input-field" type="tel" name="pwd" />
-              </label>
-              <label>
-                Почта
-                <input class="modal-input-field" type="email" name="pwd" />
-              </label>
-              <textarea name="comment" rows="5" cols="45" placeholder="Оставьте комментарий"></textarea>
-            </form>
+            <div class="">
+              <h3 class="modal-header">Оставьте свои данные, мы вам перезвоним</h3>
+              <form class="modal-input-form">
+                <label class="modal-input-label">Имя</label>
+                <input class="modal-input-field" type="text" name="name" />
+                <label class="modal-input-label">Телефон</label>
+                <input class="modal-input-field" type="tel" name="tel" />
+                <label class="modal-input-label">Почта</label>
+                <input class="modal-input-field" type="email" name="email" />
+                <label class="modal-input-label">Комментарий</label>
+                <textarea class="modal-input-textarea" placeholder="Введите текст" name="comment" rows="6" cols="10"></textarea>
+                <label for="agreement">Соглашаюсь с рассылкой и принимаю <a class="checkbox-agr-link" href="">Условия договора</a></label>
+                <input class="checkbox" id="agreement" name="agreement" type="checkbox" value="agreement" />
+              </form>
+              <button class="modal-send-button" type="button">Отправить</button>
+            </div>
           </div>
         </div>
       </section>
@@ -150,48 +146,28 @@
                 <div class="social-team-box">
                   <ul class="social-team-icons">
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://instagram.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Instagram"
+                      <a class="social-team-link" href="https://instagram.com/" target="_blank" rel="noopener noreferer" aria-label="Instagram"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#instagram"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://twitter.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Twitter"
+                      <a class="social-team-link" href="https://twitter.com/" target="_blank" rel="noopener noreferer" aria-label="Twitter"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#twitter"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://facebook.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Facebook"
+                      <a class="social-team-link" href="https://facebook.com/" target="_blank" rel="noopener noreferer" aria-label="Facebook"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#facebook"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://linkedin.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Linkedin"
+                      <a class="social-team-link" href="https://linkedin.com/" target="_blank" rel="noopener noreferer" aria-label="Linkedin"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#linkedin"></use>
                         </svg>
@@ -211,48 +187,28 @@
                 <div class="social-team-box">
                   <ul class="social-team-icons">
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://instagram.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Instagram"
+                      <a class="social-team-link" href="https://instagram.com/" target="_blank" rel="noopener noreferer" aria-label="Instagram"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#instagram"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://twitter.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Twitter"
+                      <a class="social-team-link" href="https://twitter.com/" target="_blank" rel="noopener noreferer" aria-label="Twitter"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#twitter"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://facebook.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Facebook"
+                      <a class="social-team-link" href="https://facebook.com/" target="_blank" rel="noopener noreferer" aria-label="Facebook"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#facebook"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://linkedin.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Linkedin"
+                      <a class="social-team-link" href="https://linkedin.com/" target="_blank" rel="noopener noreferer" aria-label="Linkedin"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#linkedin"></use>
                         </svg>
@@ -272,48 +228,28 @@
                 <div class="social-team-box">
                   <ul class="social-team-icons">
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://instagram.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Instagram"
+                      <a class="social-team-link" href="https://instagram.com/" target="_blank" rel="noopener noreferer" aria-label="Instagram"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#instagram"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://twitter.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Twitter"
+                      <a class="social-team-link" href="https://twitter.com/" target="_blank" rel="noopener noreferer" aria-label="Twitter"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#twitter"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://facebook.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Facebook"
+                      <a class="social-team-link" href="https://facebook.com/" target="_blank" rel="noopener noreferer" aria-label="Facebook"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#facebook"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://linkedin.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Linkedin"
+                      <a class="social-team-link" href="https://linkedin.com/" target="_blank" rel="noopener noreferer" aria-label="Linkedin"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#linkedin"></use>
                         </svg>
@@ -333,48 +269,28 @@
                 <div class="social-team-box">
                   <ul class="social-team-icons">
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://instagram.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Instagram"
+                      <a class="social-team-link" href="https://instagram.com/" target="_blank" rel="noopener noreferer" aria-label="Instagram"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#instagram"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://twitter.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Twitter"
+                      <a class="social-team-link" href="https://twitter.com/" target="_blank" rel="noopener noreferer" aria-label="Twitter"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#twitter"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://facebook.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Facebook"
+                      <a class="social-team-link" href="https://facebook.com/" target="_blank" rel="noopener noreferer" aria-label="Facebook"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#facebook"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-icons-item">
-                      <a
-                        class="social-team-link"
-                        href="https://linkedin.com/"
-                        target="_blank"
-                        rel="noopener noreferer"
-                        aria-label="Linkedin"
+                      <a class="social-team-link" href="https://linkedin.com/" target="_blank" rel="noopener noreferer" aria-label="Linkedin"
                         ><svg class="social-team-svg">
                           <use href="./img/sprite.svg#linkedin"></use>
                         </svg>
@@ -447,9 +363,7 @@
           </div>
           <address id="Contacts">
             <div class="map-link-box">
-              <a class="link map-link" href="https://goo.gl/maps/yimsJbPZ72SQHya66" target="_blank" rel="noreferrer noopener"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+              <a class="link map-link" href="https://goo.gl/maps/yimsJbPZ72SQHya66" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
             </div>
             <div class="maillink-box">
               <a class="link link-footer" href="mailto:info@example.com">info@example.com</a>
@@ -461,48 +375,28 @@
           <h3 class="contact-list-header">присоединяйтесь</h3>
           <ul class="social-icons">
             <li class="social-icons-item">
-              <a
-                class="social-icons-link"
-                href="https://instagram.com/"
-                target="_blank"
-                rel="noopener noreferer"
-                aria-label="Instagram"
+              <a class="social-icons-link" href="https://instagram.com/" target="_blank" rel="noopener noreferer" aria-label="Instagram"
                 ><svg class="social-icons-svg">
                   <use href="./img/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-icons-item">
-              <a
-                class="social-icons-link"
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferer"
-                aria-label="Twitter"
+              <a class="social-icons-link" href="https://twitter.com/" target="_blank" rel="noopener noreferer" aria-label="Twitter"
                 ><svg class="social-icons-svg">
                   <use href="./img/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-icons-item">
-              <a
-                class="social-icons-link"
-                href="https://facebook.com/"
-                target="_blank"
-                rel="noopener noreferer"
-                aria-label="Facebook"
+              <a class="social-icons-link" href="https://facebook.com/" target="_blank" rel="noopener noreferer" aria-label="Facebook"
                 ><svg class="social-icons-svg">
                   <use href="./img/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-icons-item">
-              <a
-                class="social-icons-link"
-                href="https://linkedin.com/"
-                target="_blank"
-                rel="noopener noreferer"
-                aria-label="Linkedin"
+              <a class="social-icons-link" href="https://linkedin.com/" target="_blank" rel="noopener noreferer" aria-label="Linkedin"
                 ><svg class="social-icons-svg">
                   <use href="./img/sprite.svg#linkedin"></use>
                 </svg>
@@ -513,9 +407,7 @@
         <div>
           <h3 class="telegram-sub-header">Подпишитесь на рассылку</h3>
           <form class="telegram-sub-form">
-            <label>
-              <input class="telegram-sub-label" placeholder="E-mail" type="email" name="email" />
-            </label>
+            <input class="telegram-sub-label" placeholder="E-mail" type="email" name="email" />
             <button class="telegram-sub-button" type="submit">
               Подписаться
               <span>
