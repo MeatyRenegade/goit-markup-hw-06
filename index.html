@@ -49,22 +49,30 @@
                 <use href="./img/modal-close-btn.svg"></use>
               </svg>
             </button>
-            <div class="">
-              <h3 class="modal-header">Оставьте свои данные, мы вам перезвоним</h3>
-              <form class="modal-input-form">
+            <h3 class="modal-header">Оставьте свои данные, мы вам перезвоним</h3>
+            <form>
+              <div class="modal-input-form">
                 <label class="modal-input-label">Имя</label>
                 <input class="modal-input-field" type="text" name="name" />
+              </div>
+              <div class="modal-input-form">
                 <label class="modal-input-label">Телефон</label>
                 <input class="modal-input-field" type="tel" name="tel" />
+              </div>
+              <div class="modal-input-form">
                 <label class="modal-input-label">Почта</label>
                 <input class="modal-input-field" type="email" name="email" />
+              </div>
+              <div class="modal-input-form">
                 <label class="modal-input-label">Комментарий</label>
                 <textarea class="modal-input-textarea" placeholder="Введите текст" name="comment" rows="6" cols="10"></textarea>
-                <label for="agreement">Соглашаюсь с рассылкой и принимаю <a class="checkbox-agr-link" href="">Условия договора</a></label>
+              </div>
+              <div class="modal-input-form">
                 <input class="checkbox" id="agreement" name="agreement" type="checkbox" value="agreement" />
-              </form>
+                <label for="agreement">Соглашаюсь с рассылкой и принимаю <a class="checkbox-agr-link" href="">Условия договора</a></label>
+              </div>
               <button class="modal-send-button" type="button">Отправить</button>
-            </div>
+            </form>
           </div>
         </div>
       </section>

@@ -225,6 +225,8 @@ body {
 .backdrop {
   position: fixed;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -234,31 +236,37 @@ body {
 }
 
 .backdrop.is-hidden {
-  opacity: 0;
+  /* visibility: hidden;
+  opacity: 0; */
   pointer-events: none;
 }
 
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, 0) scale(0.2, 0.25);
+}
+
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   width: 528px;
-  height: 581px;
-  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 4px;
   background-color: var(--fill-in-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 99;
 }
 
 .modal-close-button {
-  display: block;
-  margin-left: auto;
+  position: absolute;
+  display: flex;
+  top: 8px;
+  right: 8px;
   padding: 0;
   width: 30px;
   height: 30px;
-  margin-top: 8px;
-  margin-right: 8px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
@@ -281,12 +289,10 @@ body {
 .modal-input-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
 }
 
 .modal-input-label {
   margin-bottom: 4px;
-  margin-left: 40px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -295,9 +301,7 @@ body {
 }
 
 .modal-input-field {
-  margin-right: 39px;
   margin-bottom: 10px;
-  margin-left: 41px;
   width: 448px;
   height: 40px;
   font-style: var(--header-color);
@@ -308,12 +312,10 @@ body {
 }
 
 .modal-input-textarea {
-  margin-right: 39px;
   margin-bottom: 20px;
-  margin-left: 41px;
   padding: 12px 16px 12px 16px;
-  width: 448px;
-  height: 120px;
+  min-width: 100%;
+  min-height: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -928,7 +930,7 @@ body {
   background-position: center;
 }
 
-::placeholder {
+.telegram-sub-label textarea::placeholder {
   font-size: 16px;
   line-height: 1.25;
   display: flex;
