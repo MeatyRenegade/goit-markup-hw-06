@@ -392,6 +392,7 @@ body {
 
 .modal-input-form textarea:hover,
 .modal-input-form textarea:focus {
+  outline: none;
   border: 1px solid var(--hover-color);
   box-sizing: border-box;
   border-radius: 4px;
