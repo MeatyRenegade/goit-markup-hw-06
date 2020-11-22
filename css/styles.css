@@ -236,8 +236,8 @@ body {
 }
 
 .backdrop.is-hidden {
-  /* visibility: hidden;
-  opacity: 0; */
+  visibility: hidden;
+  opacity: 0;
   pointer-events: none;
 }
 
@@ -308,11 +308,10 @@ body {
   position: absolute;
   display: inline-block;
   content: "";
-  top: 4px;
+  top: 3px;
   left: 8px;
   width: 16px;
   height: 15px;
-  /* margin-right: 8px; */
   background: url("../img/checkbox.svg");
 }
 
